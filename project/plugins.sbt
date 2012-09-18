@@ -7,11 +7,13 @@ resolvers ++= Seq(
 
 // Type "sbt gen-idea" to create an IntelliJ IDEA project.
 
-addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.0.0")
+addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.1.0")
 
 // Type "sbt eclipse" to create an eclipse project
 
-addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse" % "2.1.0-RC1")
+// Oscar Renalias 20120917: deactivated for now, since the latest version of sbt-eclipse only works with SBT 0.11.3-2 or 0.12, and both are giving me problems with dependencies
+
+//addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse" % "2.1.0")
 
 addSbtPlugin("play" % "sbt-plugin" % "2.0.1")
 
